@@ -112,11 +112,18 @@ main .contenedor-img {
 
 
 .your-div {
-  position: relative;
-}
-
-.your-div span {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  margin: 30px;
+}
+
+.titulo{
+  margin: 30px;
+  margin-top: 0px;
+}
+h2{
+  margin-left: 20px;
 }
