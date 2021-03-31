@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #f5ebd1;
+  display: flex;
+  align-items: center;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+.contenedor {
+  background-color: #fff;
+  max-width: 1200px;
+  padding: 40px;
+  border-radius: 10px;
+  height: 49%;
+  margin: 1% 1%;
+}
+
+.izquierda {
+  left: 0;
+  background-color: #f5ebd1;
+}
+.derecha {
+  right: 0;
+  background-color: #f5ebd1;
+  
+}
+.split {
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main .contenedor-img {
+  max-width: 60%;
+  margin-right: 40px;
+}
+
+.contenedor-texto .titulo {
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.contenedor-texto .mascota {
+  font-weight: bold;
+  color: #c99806;
+  font-style: normal;
+}
+
+.contenedor-texto p {
+  margin-bottom: 40px;
+  line-height: 36px;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+}
+
+.btn-link:hover,
+.btn-link.activo {
+  color: #fff;
+  background: #5b4a9a;
+}
+
+
+.your-div {
+  position: relative;
+}
+
+.your-div span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
