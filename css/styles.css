@@ -1,22 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 body {
+  background-color: #f5ebd1 !important;
   min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  background-color: #f5ebd1;
-  display: flex;
-  align-items: center;
+
 }
 p {
   font-family: "Times New Roman", Times, serif;
@@ -25,14 +12,15 @@ h2 {
   font-family: "Times New Roman", Times, serif;
 }
 .contenedor {
-  background-color: #fff;
+  background-color: #f5ebd1;
   max-width: 1200px;
-  padding: 40px;
   border-radius: 10px;
-  height: 49%;
-  margin: 1% 1%;
+  height: 50%;
 }
-
+.container{
+  background-color: #f5ebd1;
+  margin: 0px;
+}
 .izquierda {
   left: 0;
   background-color: #f5ebd1;
@@ -40,15 +28,15 @@ h2 {
 .derecha {
   right: 0;
   background-color: #f5ebd1;
-  
+  overflow:show;
 }
 .split {
   width: 50%;
-  position: fixed;
-  z-index: 1;
   top: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  vertical-align: top;
+  display: inline-block;
 }
 header {
   display: flex;
@@ -56,27 +44,9 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 80px;
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+  background-color: #f5ebd1;
 }
 
-main {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-main .contenedor-img {
-  max-width: 60%;
-  margin-right: 40px;
-}
 
 .contenedor-texto .titulo {
   font-size: 50px;
@@ -90,26 +60,14 @@ main .contenedor-img {
   font-style: normal;
 }
 
-.contenedor-texto p {
-  margin-bottom: 40px;
-  line-height: 36px;
-}
-
-.btn-link {
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 100px;
-  margin-right: 10px;
-  text-decoration: none;
-  background: #f2f2f2;
-}
-
 .btn-link:hover,
 .btn-link.activo {
-  color: #fff;
+  color: #f5ebd1;
   background: #5b4a9a;
 }
-
+div{
+  background-color: #f5ebd1;
+}
 
 .your-div {
   position: fixed;
@@ -126,4 +84,42 @@ main .contenedor-img {
 }
 h2{
   margin-left: 20px;
+}
+
+.wrapper { 
+  border : 2px solid #000; 
+  overflow:hidden;
+}
+
+.wrapper {
+   min-height: 200px;
+   padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .split{
+     display: block;
+  }
+
+  .izquierda {
+    width: 100%;
+    display:block;
+    float:none;
+  }
+
+  .derecha {
+     width: 100%;
+     display:block;
+    width:100%;
+    float:none;
+  }
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+footer {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  height: 40px;
 }
